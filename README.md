@@ -22,5 +22,4 @@ Block for "Gold" in SWPT: `7E 04 67 6F 6C 64 0A 00 00 00 FF 56 08 A8 E2 F4 01 00
 `FF 56 08 A8 E2`: u32 type.  
 `FF 9C 7C 4D AD`: 1 byte long bool.  
 `53 FF EE F1 E9 FD`: Array of String.  
- - `53` Possibly indicates an Array while `FF 9C 7C 4D AD` indicates the type.  
- This is followed by a padding byte and a u32 for the array length.
+`53`: Indicates an Array, that byte is infront of the 5 type indicator bytes. Is followed by 1 padding byte and a u32 for array length.
