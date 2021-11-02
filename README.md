@@ -1,9 +1,7 @@
 # Easy Save Reversal
 Easy Save is a framework to save and load data in unity games.
 Im analysing this using save files from the game "She will punish them".
-The general structure seems to be in small blocks.  
-Each block has a key that is a string value, then follows the datatype indicator for the value and then the actual value data.  
-A block gets terminated with a `0x7B`
+The general structure seems to be in small blocks, im going to refer to them as "Datablocks" from now on.  
 
 ## Analysis
 ### Datablock
