@@ -1,6 +1,6 @@
 # Easy Save Reversal
-Easy Save is a framework to save and load data in unity games.
-Im analysing this using save files from the game "She will punish them".
+Easy Save is a framework to save and load data in unity games.  
+Im analysing this using save files from the game "She will punish them".  
 The general structure seems to be in small blocks, im going to refer to them as "Datablocks" from now on.  
 
 ## Analysis
