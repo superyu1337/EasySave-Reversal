@@ -1,5 +1,6 @@
 # Easy Save Reversal
 Easy Save is a framework to save and load data in unity games.
+Im analysing this using save files from the game "She will punish them".
 The general structure seems to be in small blocks.  
 Each block has a key that is a string value, then follows the datatype indicator for the value and then the actual value data.  
 A block gets terminated with a `0x7B`
@@ -26,7 +27,7 @@ Bool:
    - Indicator: `0x07`
 
 
-Block for "Gold": `7E 04 67 6F 6C 64 0A 00 00 00 FF 56 08 A8 E2 F4 01 00 00 7B`  
+Block for "Gold" in SWPT: `7E 04 67 6F 6C 64 0A 00 00 00 FF 56 08 A8 E2 F4 01 00 00 7B`  
 `7E`: String indicator  
 `04`: String length  
 `67 6F 6C 64`: String "gold"  
