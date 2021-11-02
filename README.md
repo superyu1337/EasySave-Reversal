@@ -4,22 +4,7 @@ Im analysing this using save files from the game "She will punish them".
 The general structure seems to be in small blocks, im going to refer to them as "Datablocks" from now on.  
 
 ## Analysis
-### Datablock
-Example Block: `7E 0A 70 6C 61 79 65 72 4E 61 6D 65 0B 00 00 00 FF EE F1 E9 FD 04 45 6C 6C 61 7B`
-- `0x7E`: A string is following.
-- `0x0A`: Length of the string that follows.
-- 3rd to 10th byte: Actual string. In this case: `playername` - No null terminator!
-- `0x0B`: Some sort of Checksum, indicator or terminator.
-- 3 zero filled bytes
-- 5 datatype indicator bytes?
-- Actual data, seems to be variable length depending on the value's datatype.
-- `0x7B`: Datablock terminator
-   
- 
-Bool:
-   - 5 indicator bytes: `FF 9C 7C 4D AD`
-
-
+### Datablock structure on an example
 Block for "Gold" in SWPT: `7E 04 67 6F 6C 64 0A 00 00 00 FF 56 08 A8 E2 F4 01 00 00 7B`  
 `7E`: Block start indicator
 `04`: String length  
